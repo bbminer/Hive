@@ -34,10 +34,10 @@ public class AvgUDAF extends UDAF {
 			return state.count == 0 ? null : state;
 		}
 
-		public boolean merge(State o) {
-			if (o != null) {
-				state.count += o.count;
-				state.sum += o.sum;
+		public boolean merge(State s) {
+			if (s != null) {
+				state.count += s.count;
+				state.sum += s.sum;
 			}
 			return true;
 		}
