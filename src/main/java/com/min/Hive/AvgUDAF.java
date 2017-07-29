@@ -2,8 +2,6 @@ package com.min.Hive;
 
 import org.apache.hadoop.hive.ql.exec.UDAF;
 import org.apache.hadoop.hive.ql.exec.UDAFEvaluator;
-import org.apache.hadoop.io.FloatWritable;
-import org.apache.hadoop.io.IntWritable;
 
 public class AvgUDAF extends UDAF {
 	public static class State {
